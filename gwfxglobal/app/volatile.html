@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Volatile</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="telephone=no" name="format-detection">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport" />
+		<meta name="author" content="[2018.4] Designed by Bruce;Coded by Janice">
+		<link rel="stylesheet" media="screen" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<script src="js/rem.js" charset="utf-8"></script>
+		<script type="text/javascript">
+		    remCompute(750, true);
+		</script>
+		<div class="wrapper">
+			<div class="m-strategy f-bgfff f-h100vh">
+				<div class="author-info">
+					<img src="images/analyst.jpg" alt="">
+					<div class="inbk">
+						<strong>Analysts</strong>
+						<span>2018-03-27 22:50:00</span>
+					</div>
+				</div>
+				<div class="volatile-bar green">
+					<span class="item-n">USDJPY</span><span>Bullish</span>
+				</div>
+				<h5 class="tit">Jens Weidmann forcasted Fed's rate may hike, USD rises</h5>
+				<p class="suggestion">Suggestion: USDJPY Go Long at 105.653, Target: 105.853, Stop Loss: 20%</p>
+				<div class="volatile-percent">
+					<div class="pcont">
+						<span class="green"><em>40%</em> Long</span>
+						<span class="red">Short <em>13%</em></span>
+						<div class="pbg"><div class="bar" style="width:40%"><span></span></div></div>
+					</div>
+					<p>The proportion is vaild till the article releases</p>
+
+				</div>
+
+
+				<!-- 编辑器录入区域 -->
+				<div class="edit-cont">
+					<p>The global markets become risk aversed. USD sinks and Non-US currencies surge</p>
+					<img src="images/strategy-pic.jpg" alt="">
+					<p>Migrant crisis and the possibility of terror attacks cause volatility in Precious Metals Market</p>
+					<p>Migrant crisis and the possibility of terror attacks cause volatility in Precious Metals Market</p>
+					<p>Migrant crisis and the possibility of terror attacks cause volatility in Precious Metals Market</p>
+					<p>Migrant crisis and the possibility of terror attacks cause volatility in Precious Metals Market</p>
+					<p>Migrant crisis and the possibility of terror attacks cause volatility in Precious Metals Market</p>
+				</div>
+			</div>
+		</div>
+		
+		
+
+	</body>
+	<script type="text/javascript">
+		$(function () {
+			$('.volatile-percent').each(function () {
+				var halfw = $(this).find('.green em').text();
+				if(parseInt(halfw)>50){
+					$(this).addClass('green');
+				}else if (parseInt(halfw)<50) {
+					$(this).addClass('red');
+				}
+			})
+		})
+	</script>
+
+</html>

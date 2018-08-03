@@ -1,0 +1,43 @@
+
+///*:::PRIMARY:::*//* Portrait tablet to landscape and desktop 
+//------------------------------------------------------*/
+@media(min-width:980px) and (max-width:1279px){
+    .w-part{width:950px;}
+    .wrapper{background-size: 1280px auto; min-height: 702px;}
+    .banner{
+        .banner-tit{font-size: 48px;padding-top: 105px;}
+        .w-part{
+            .banner-img{width:260px;background-size: 260px auto;top:60px;margin-left: -290px;}
+        }
+        .btn-group{margin-top: 80px;}
+        .num-txt-group{margin-top: 60px;}
+    }
+    .btn-group{
+        .btn{width:265px;font-size: 22px;}
+    }
+    .picture-scroll{background-size: auto 140px;width:950px;
+        .scroll-options{position: absolute;left:520px;top:450px;}
+        .pic-infos{float: left;width:518px;}
+        .pic-desc{margin-left: 520px;}
+    }
+    .pic-desc{
+        .p1{font-size: 32px;}
+        .p2{font-size: 26px;margin-top: 40px;}
+    }
+    .badge-pic-list{
+        .badge-pic2,.badge-pic3{margin: 0 22px;}
+    }
+    .step-list{
+        li{
+            .list-item{margin-left: 45px;}
+            &:first-child{
+                .list-item{padding: 0 36px;margin-left: 0;}
+                & + li{width:35%;.list-item{margin-left: 42px;}}
+            }
+        }
+    }
+    .img-list-group{
+        .list-col-4{@include prefixer(transform,scale(.93), ("webkit", "moz","ms","o"));}
+    }
+}
+

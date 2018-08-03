@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="keywords" content="/"/>
+	<meta name="description" content="/"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta name="author" content="[2018.7] Designed by Pepe; Coded by Vita">
+	
+	<!--#include file="/public/tags/lp_css.html"-->
+	
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script type="text/javascript" src="/public/js/rem.js"></script>
+<script type="text/javascript">
+	remCompute(750, true);
+</script>
+
+<!-- header begin -->
+<!--# include file="/public/template/header.html" -->
+<!-- header end -->
+
+<div class="wrapper">
+	<!-- banner begin -->
+	<div class="banner">
+	
+	</div>
+	<!-- banner end -->
+	<!-- part1 begin -->
+	<div class="part1">
+		<div class="w-part">
+		
+		</div>
+	</div>
+	<!-- part1 end -->
+	<!-- part2 begin -->
+	<div class="part2">
+		<div class="w-part">
+		
+		</div>
+	</div>
+	<!-- part2 end -->
+</div>
+<!--# include file="/public/template/footer.html" -->
+
+<!-- rule begin-->
+<div class="PopupLayer popup-tb pop-rule-layer" style="display: none;">
+	<div class="popup-tb-cell">
+		<div class="PopupBox">
+			<a href="javascript:;" class="PopupCloseBtn"></a>
+			<div class="rule-title">Syarat dan Ketentuan</div>
+			<div class="PopupCon mCustomScrollbar">
+				<ol class="decimal">
+					<li>Sebagai klien HSB, anda setuju untuk bertransaksi sesuai dengan syarat dan ketentuan yang berlaku.</li>
+					<li>Cash back ini hanya berlaku untuk klien baru yang mendaftarkan langsung di website (bonus ini tidak berlaku untuk klien lama dan klien IB).</li>
+					<li>Setiap pendaftar harus berumur 18 tahun atau lebih, sesuai dengan ketentuan perusahaan kami.</li>
+					<li>Promo ini berlaku untuk klien yang mendaftar pada tanggal 1 Juli – 31 Agustus 2018.</li>
+					<li>Cash back Rp. 1.000.000 atau USD 100 akan diberikan kepada klien aktif yang sudah menyelesaikan minimal 3 lot selama periode promosi dan telah memenuhi persyaratan minimum simpanan sesuai dengan jenis akun yang telah ditentukan di website perusahaan atau di peraturan trading.</li>
+					<li>Ketentuan untuk menyelesaikan transaksi minimal 3 lot harus diselesaikan dalam waktu 1 bulan setelah pengaktifan akun.</li>
+					<li>Cash back akan dimasukan ke akun trading klien dalam waktu 10 hari kerja di bulan berikutnya setelah ketentuan trading terpenuhi.</li>
+					<li>Cash back yang diberikan tidak dapat melebihi Rp. 1.000.000 atau USD 100.</li>
+					<li>Promosi ini hanya berlaku untuk klien baru yang hanya memiliki maksimum 1 akun. Penawaran ini berlaku terbatas untuk 1 orang di dalam satu keluarga, meskipun mereka memiliki lebih dari 1 akun.</li>
+					<li>Hanya transaksi yang melebihi waktu 5 menit yang akan dihitung ke dalam perhitungan cash back.</li>
+					<li>Posisi hedge tidak akan dihitung ke dalam perhitungan cash back.</li>
+					<li>Promosi ini tidak berlaku untuk karyawan, keluarga dan anggota dari perusahaan HSB.</li>
+					<li>Klien hanya dapat mendapatkan 1 promosi dalam satu waktu. Kecuali diperbolehkan di promosi tersebut.</li>
+					<li>HSB memiliki hak untuk mengubah, membatalkan atau membatasi penawaran ini kepada setiap klien.</li>
+					<li>Jika HSB mendeteksi adanya penyalahgunaan ketentuan dari promo ini, HSB berhak untuk menarik bonus ataupun membatalkan akses klien kepada jasa yang disediakan oleh HSB.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="/public/js/jquery.min.js"></script>
+<link href="/public/css/Scrollbar.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/public/js/mCustomScrollbar.js"></script>
+<!-- rule end-->
+<script type="text/javascript" src="/public/js/wow.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+	window.onload=function() {
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		if (!!document.getElementsByClassName) {
+			wow.init();
+		}
+	};
+	
+	// rule
+	$(".pop-rule-btn").click(function(e){
+		e.preventDefault();
+		$(".pop-rule-layer").show();
+	});
+	$(".PopupCloseBtn").click(function(){
+		$(".pop-rule-layer").hide();
+	});
+	$.mCustomScrollbar.defaults.scrollButtons.enable=true;
+	$(".mCustomScrollbar").mCustomScrollbar({theme:"dark-thick"});
+</script>
+</body>
+</html>

@@ -1,0 +1,574 @@
+@charset "utf-8";
+body {
+  font: 13px microsoft yahei,helvetica,arial;
+  background: #efefef;
+  color: #4c4c4c;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+body,
+p,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+pre,
+input,
+table,
+tr,
+td,
+button,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+}
+input[type=button],
+input[type=text],
+input[type=password] {
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+input,
+button {
+  border: 0 none;
+}
+img {
+  border: 0 none;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  *text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active,
+a:focus {
+  outline: none;
+}
+a:active {
+  noOutline: expression_r(this.onFocus=this.blur());
+}
+a {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+:focus {
+  outline: 0;
+}
+.dn {
+  display: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.al-c {
+  text-align: center;
+}
+.al-r {
+  text-align: right;
+}
+.hide-t {
+  text-indent: 0;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+/* ============ Common ============ */
+.mw750 {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+}
+/* .step-pubox{
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:12rem;
+  overflow: hidden;
+} */
+.guideline-pagebg {
+  height:100vh;
+  width: 100%;
+  display: block;
+}
+[class*="skrill-pop-"] {
+  position: relative;
+}
+.skrill-pop-01 {
+  background: url(../images/guideline/skrill-pop-01.png) no-repeat left center;
+}
+.skrill-pop-02 {
+  background: url(../images/guideline/skrill-pop-02.png) no-repeat left center;
+}
+.skrill-pop-03 {
+  background: url(../images/guideline/skrill-pop-03.png) no-repeat left center;
+}
+.skrill-pop-04 {
+  background: url(../images/guideline/skrill-pop-04.png) no-repeat left center;
+}
+.skrill-pop-04-2 {
+  background: url(../images/guideline/skrill-pop-04-2.png) no-repeat left center;
+}
+.skrill-pop-05 {
+  background: url(../images/guideline/skrill-pop-05.png) no-repeat left center;
+}
+.skrill-pop-06 {
+  background: url(../images/guideline/skrill-pop-06.png) no-repeat left center;
+}
+.skrill-pop-07 {
+  background: url(../images/guideline/skrill-pop-07.png) no-repeat left center;
+}
+.skrill-01 .PopupBox {
+  top: 61%;
+}
+.skrill-02 .PopupBox {
+  top: 36%;
+}
+.skrill-03 .PopupBox {
+  top: 37%;
+}
+.skrill-04 .PopupBox {
+  top: 35%;
+}
+.skrill-04-2 .PopupBox {
+  top: 5%;
+}
+.skrill-05 .PopupBox {
+  top: 63%;
+}
+.skrill-06 .PopupBox {
+  top: 2%;
+}
+.skrill-07 .PopupBox {
+  top: 25%;
+}
+.btn-group {
+  position: absolute;
+}
+.btn-group .btn {
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  *zoom: 1;
+  text-align: center;
+  position: relative;
+}
+.btn-group .btn-default {
+  color: #5571f4;
+  background: #fff;
+  padding: 1px;
+}
+.btn-group .btn-primary {
+  color: #e2eaf2;
+  border: 1px solid #e2eaf2;
+}
+.guideline-step {
+  position: relative;
+}
+.PopupLayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.PopupLayer .PopupBox {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.skrill-pop-01 {
+  width: 516px;
+  height: 223px;
+}
+.skrill-pop-02 {
+  width: 580px;
+  height: 211px;
+}
+.skrill-pop-03 {
+  width: 694px;
+  height: 270px;
+}
+.skrill-pop-04 {
+  width: 694px;
+  height: 211px;
+}
+.skrill-pop-04-2 {
+  width: 698px;
+  height: 306px;
+}
+.skrill-pop-05 {
+  width: 694px;
+  height: 269px;
+}
+.skrill-pop-06 {
+  width: 708px;
+  height: 223px;
+}
+.skrill-pop-07 {
+  width: 698px;
+  height: 306px;
+}
+[class*="skrill-pop-"] {
+  background-size: 750px auto;
+}
+.btn-group {
+  bottom: 20px;
+  right: 20px;
+}
+.btn-group .btn {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 23px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.btn-group .btn ~ .btn {
+  margin-left: 26px;
+}
+.num-right .btn-group {
+  margin-right: 60px;
+}
+.arrow-bt .btn-group {
+  margin-bottom: 20px;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* ============ Responsive ============ */
+@media (max-width: 750px) {
+  .skrill-pop-01 {
+    width: 5.16rem;
+    height: 2.23rem;
+  }
+  .skrill-pop-02 {
+    width: 5.8rem;
+    height: 2.11rem;
+  }
+  .skrill-pop-03 {
+    width: 6.94rem;
+    height: 2.7rem;
+  }
+  .skrill-pop-04 {
+    width: 6.94rem;
+    height: 2.11rem;
+  }
+  .skrill-pop-04-2 {
+    width: 6.98rem;
+    height: 3.06rem;
+  }
+  .skrill-pop-05 {
+    width: 6.94rem;
+    height: 2.69rem;
+  }
+  .skrill-pop-06 {
+    width: 7.08rem;
+    height: 2.23rem;
+  }
+  .skrill-pop-07 {
+    width: 6.98rem;
+    height: 3.06rem;
+  }
+  [class*="skrill-pop-"] {
+    background-size: 7.50rem auto;
+  }
+  .btn-group {
+    bottom: 0.20rem;
+    right: 0.20rem;
+  }
+  .btn-group .btn {
+    -webkit-border-radius: 0.04rem;
+    -moz-border-radius: 0.04rem;
+    border-radius: 0.04rem;
+    font-size: 0.23rem;
+    height: 0.40rem;
+    line-height: 0.40rem;
+    padding-left: 0.30rem;
+    padding-right: 0.30rem;
+  }
+  .btn-group .btn ~ .btn {
+    margin-left: 0.26rem;
+  }
+  .num-right .btn-group {
+    margin-right: 0.60rem;
+  }
+  .arrow-bt .btn-group {
+    margin-bottom: 0.20rem;
+  }
+}
+
+/* Fasapay */
+[class*="Fasapay-pop-"] {
+  position: relative;
+}
+
+.Fasapay-pop-02 {
+  width:6.78rem;
+  height:2.4rem;
+  background: url(../images/guideline/Fasapay-pop-02.png) no-repeat left center;
+}
+.Fasapay-pop-03 {
+  width:6.94rem;
+  height:2.69rem;
+  background: url(../images/guideline/Fasapay-pop-03.png) no-repeat left center;
+}
+.Fasapay-pop-04 {
+  width:6.94rem;
+  height:2.70rem;
+  background: url(../images/guideline/Fasapay-pop-04.png) no-repeat left center;
+}
+.Fasapay-pop-05 {
+  width:7.2rem;
+  height:2.26rem;
+  background: url(../images/guideline/Fasapay-pop-05.png) no-repeat left center;
+}
+.Fasapay-pop-06 {
+  width:6.94rem;
+  height:2.7rem;
+  background: url(../images/guideline/Fasapay-pop-06.png) no-repeat left center;
+}
+.Fasapay-pop-07 {
+  width:5.75rem;
+  height:2.26rem;
+  background: url(../images/guideline/Fasapay-pop-07.png) no-repeat left center;
+}
+.Fasapay-pop-08 {
+  width:6.56rem;
+  height:2.72rem;
+  background: url(../images/guideline/Fasapay-pop-08.png) no-repeat left center;
+}
+
+
+[class*="Fasapay-pop-"] {
+  background-size: 7.50rem auto;
+}
+
+.Fasapay-02 .PopupBox {
+  top: 36%;
+}
+.Fasapay-03 .PopupBox {
+  top: 37%;
+}
+.Fasapay-04 .PopupBox {
+  top: 32%;
+}
+.Fasapay-05 .PopupBox {
+  top: 34%;
+}
+.Fasapay-06 .PopupBox {
+  top: 36%;
+}
+.Fasapay-07 .PopupBox {
+  top: 35%;
+}
+.Fasapay-08 .PopupBox {
+  top:0;
+}
+
+/* help2pay */
+[class*="help2pay-pop-"] {
+  position: relative;
+}
+
+.help2pay-pop-02 {
+  width:6.6rem;
+  height:2.5rem;
+  background: url(../images/guideline/help2pay-pop-02.png) no-repeat left center;
+}
+.help2pay-pop-03 {
+  width:6.62rem;
+  height:2.26rem;
+  background: url(../images/guideline/help2pay-pop-03.png) no-repeat left center;
+}
+.help2pay-pop-04 {
+  width:7.08rem;
+  height:2.12rem;
+  background: url(../images/guideline/help2pay-pop-04.png) no-repeat left center;
+}
+.help2pay-pop-05 {
+  width:6.62rem;
+  height:2.24rem;
+  background: url(../images/guideline/help2pay-pop-05.png) no-repeat left center;
+}
+.help2pay-pop-06 {
+  width:7.32rem;
+  height:2.12rem;
+  background: url(../images/guideline/help2pay-pop-06.png) no-repeat left center;
+}
+.help2pay-pop-07 {
+  width:6.92rem;
+  height:2.12rem;
+  background: url(../images/guideline/help2pay-pop-07.png) no-repeat left center;
+}
+.help2pay-pop-08 {
+  width:6.28rem;
+  height:2.12rem;
+  background: url(../images/guideline/help2pay-pop-08.png) no-repeat left center;
+}
+.help2pay-pop-09 {
+  width:7.1rem;
+  height:2.36rem;
+  background: url(../images/guideline/help2pay-pop-09.png) no-repeat left center;
+}
+.help2pay-pop-10 {
+  width:6.72rem;
+  height:2.36rem;
+  background: url(../images/guideline/help2pay-pop-10.png) no-repeat left center;
+}
+.help2pay-pop-11 {
+  width:6.88rem;
+  height:2.36rem;
+  background: url(../images/guideline/help2pay-pop-11.png) no-repeat left center;
+}
+.help2pay-pop-12 {
+  width:6.9rem;
+  height:2.9rem;
+  background: url(../images/guideline/help2pay-pop-12.png) no-repeat left center;
+}
+.help2pay-pop-13 {
+  width:6.70rem;
+  height:2.36rem;
+  background: url(../images/guideline/help2pay-pop-13.png) no-repeat left center;
+}
+.help2pay-pop-14 {
+  width:6.26rem;
+  height:2.26rem;
+  background: url(../images/guideline/help2pay-pop-14.png) no-repeat left center;
+}
+.help2pay-pop-15 {
+  width:6.45rem;
+  height:2.26rem;
+  background: url(../images/guideline/help2pay-pop-15.png) no-repeat left center;
+}
+.help2pay-pop-16 {
+  width:6.30rem;
+  height:2.36rem;
+  background: url(../images/guideline/help2pay-pop-16.png) no-repeat left center;
+}
+.help2pay-pop-17 {
+  width:7.3rem;
+  height:2.36rem;
+  background: url(../images/guideline/help2pay-pop-17.png) no-repeat left center;
+}
+.help2pay-pop-18 {
+  width:6.30rem;
+  height:2.36rem;
+  background: url(../images/guideline/help2pay-pop-18.png) no-repeat left center;
+}
+.help2pay-pop-19 {
+  width:7.1rem;
+  height:2.36rem;
+  background: url(../images/guideline/help2pay-pop-19.png) no-repeat left center;
+}
+
+
+[class*="help2pay-pop-"] {
+  background-size: 7.50rem auto;
+}
+
+.help2pay-02 .PopupBox {
+  top: 62%;
+}
+.help2pay-03 .PopupBox {
+  top: 42%;
+}
+.help2pay-04 .PopupBox {
+  top:52%;
+}
+.help2pay-05 .PopupBox {
+  top:60%;
+}
+.help2pay-06 .PopupBox {
+  top: 22%;
+}
+.help2pay-07 .PopupBox {
+  top: 35%;
+}
+.help2pay-08 .PopupBox {
+  top:25%;
+}
+.help2pay-09 .PopupBox {
+  top:37%;
+}
+.help2pay-10 .PopupBox {
+  top:47%;
+}
+.help2pay-11 .PopupBox {
+  top:57%;
+}
+.help2pay-12 .PopupBox {
+  top:25%;
+}
+.help2pay-13 .PopupBox {
+  top:8%;
+}
+.help2pay-14 .PopupBox {
+  top:55%;
+}
+.help2pay-15 .PopupBox {
+  top:60%;
+}
+.help2pay-16 .PopupBox {
+  top:70%;
+}
+.help2pay-17 .PopupBox {
+  top:24%;
+}
+.help2pay-18 .PopupBox {
+  top:44%;
+}
+.help2pay-19 .PopupBox {
+  top:62%;
+}
+
+.btn-group .gray-btn{
+  background:#eee;color:#999
+}
+
+

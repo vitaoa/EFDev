@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>trade record</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="telephone=no" name="format-detection">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport" />
+		<meta name="author" content="[2018.7] Designed by Lisa;Coded by Vita">
+		<link rel="stylesheet" media="screen" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<script src="js/rem.js" charset="utf-8"></script>
+		<script type="text/javascript">
+		    remCompute(750, true);
+		</script>
+		<div class="wrapper f-h100vh fixed-bt86">
+			<div class="banner-tr">
+				<a href="javascript:history.go(-1);" class="head-arrow fixed-btn"><i class="t-arrow-l"></i></a>
+				<p>Trade Record</p>
+			</div>
+			<div class="shadow-block f-bgfefefe mlr18">
+				<div class="titlebar-badge">
+					<span class="tit-badge">
+						<i class="tit-badge-l"></i><i class="tit-badge-r"></i>
+						<i class="badge-txt">Real-time Deposit & Withdraw</i>
+					</span>
+				</div>
+				<div class="ul-tb f-mt10">
+					<div class="eachOneScrollUp" id="eachOneScrollUp1">
+						<ul class="tb-col-3">
+							<li>
+								<div class="Scroll-list-item">
+									<span class="td">86***143</span>
+									<span class="td">Deposit  $500 </span>
+									<span class="td">Bonus  $150</span>
+								</div>
+								<div class="Scroll-list-item">
+									<span class="td">86***144</span>
+									<span class="td">Withdraw  $100</span>
+									<span class="td">Succeed</span>
+								</div>
+								<div class="Scroll-list-item">
+									<span class="td">86***145</span>
+									<span class="td">Deposit  $100</span>
+									<span class="td">Succeed</span>
+								</div>
+							</li>
+							<li>
+								<div class="Scroll-list-item">
+									<span class="td">86***143</span>
+									<span class="td">Deposit  $500 </span>
+									<span class="td">Bonus  $150</span>
+								</div>
+								<div class="Scroll-list-item">
+									<span class="td">86***144</span>
+									<span class="td">Withdraw  $100</span>
+									<span class="td">Succeed</span>
+								</div>
+								<div class="Scroll-list-item">
+									<span class="td">86***145</span>
+									<span class="td">Deposit  $100</span>
+									<span class="td">Succeed</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="f-h20"></div>
+			<div class="shadow-block f-bgfefefe mlr18 f-mt10">
+				<div class="titlebar-badge">
+					<span class="tit-badge">
+						<i class="tit-badge-l"></i><i class="tit-badge-r"></i>
+						<i class="badge-txt">Trade Record</i>
+					</span>
+				</div>
+				<div class="ul-tb f-mt10">
+					<div class="eachOneScrollUp" id="eachOneScrollUp2">
+						<ul class="tb-col-3">
+							<li>
+								<div class="Scroll-list-item">
+									<span class="td">86***143</span>
+									<span class="td"><i class="letter-badge theme-red"><em>B</em></i>USD/JPY</span>
+									<span class="td">Gained $15.50 profit</span>
+								</div>
+								<div class="Scroll-list-item">
+									<span class="td">86***144</span>
+									<span class="td"><i class="letter-badge theme-green"><em>S</em></i>USD/CHF</span>
+									<span class="td">gain $5.36 profit</span>
+								</div>
+								<div class="Scroll-list-item">
+									<span class="td">86***145</span>
+									<span class="td"><i class="letter-badge theme-red"><em>B</em></i>USD/CAD</span>
+									<span class="td">gain $128.62 profit</span>
+								</div>
+							</li>
+							<li>
+								<div class="Scroll-list-item">
+									<span class="td">86***143</span>
+									<span class="td"><i class="letter-badge theme-red"><em>B</em></i>USD/JPY</span>
+									<span class="td">Gained $15.50 profit</span>
+								</div>
+								<div class="Scroll-list-item">
+									<span class="td">86***144</span>
+									<span class="td"><i class="letter-badge theme-green"><em>S</em></i>USD/CHF</span>
+									<span class="td">gain $5.36 profit</span>
+								</div>
+								<div class="Scroll-list-item">
+									<span class="td">86***145</span>
+									<span class="td"><i class="letter-badge theme-red"><em><em>B</em></em></i>USD/CAD</span>
+									<span class="td">gain $128.62 profit</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="f-h20 f-mt10"></div>
+			<div class="link-group-bar group-two fixed-group-bar">
+				<a href="" class="fl-a-link"><span>Deposit Funds</span></a>
+				<a href="" class="fl-a-link"><span>Open an Account</span></a>
+			</div>
+		</div>
+
+	</body>
+	
+	<script type="text/javascript">
+		$(function () {
+			eachOneScrollUp('#eachOneScrollUp1',4000);
+			eachOneScrollUp('#eachOneScrollUp2',4000);
+		});
+		var eachOneScrollUp = function (ele,time) {
+			var timeInterval = time;
+			var _obj = $(ele),
+				scrollTimer;
+			_obj.hover(function(){
+				clearInterval(scrollTimer);
+			},function(){
+				scrollTimer = setInterval(function(){
+					scrollNews(_obj);
+				},timeInterval);
+			}).trigger("mouseout");
+			function scrollNews(obj){
+				var $self = obj.find("ul:first");
+				var lineHeight = $self.find("li:first").outerHeight(true);
+				$self.animate({ "top" : -lineHeight +"px" },1600 , function(){
+					$self.css({"top":"0px"}).find("li:first").appendTo($self);
+				})
+			}
+		};
+	
+	
+	</script>
+</html>

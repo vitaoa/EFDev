@@ -1,0 +1,31 @@
+$support_for_ie:true;
+$normalize_headings:false;
+$page_h5:false;
+$has_typography:false;
+$has_form_element:false;
+
+
+//$background: #fff !default;
+//$color: #000 !default;
+
+@import "../mixins/library";
+@import "../_normalize";
+
+
+/* ============ Common ============ */
+.dn{display:none}
+.fl{float: left;}
+.fr{float: right;}
+.al-c{text-align: center;}
+.al-r{text-align: right;}
+.hide-t{ text-indent:0; font-size:0; line-height:0; height:0; overflow:hidden;opacity: 0;}
+.clearfix{@include clearfix;}
+
+.mobile{display: none;}
+@media(max-width: 979px) {
+  .computer{display: none;}
+  .mobile{display: block;}
+}
+@include font-face("fontico","../fonts/ico",("eot","woff","ttf","svg"),false){
+  font-weight: 400;
+};

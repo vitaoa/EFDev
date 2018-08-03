@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Questionnaire</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="telephone=no" name="format-detection">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport" />
+		<meta name="author" content="[2018.6] Designed by Hero;Coded by Vita">
+		<link rel="stylesheet" media="screen" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<script src="js/rem.js" charset="utf-8"></script>
+		<script type="text/javascript">
+		    remCompute(750, true);
+		</script>
+		<div class="wrapper f-h100vh">
+			<div class="question-item f-bgfff f-mt20">
+				<p class="question-title hyphenate">1.Please describe the problems you encountered during the payment.</p>
+				<div class="question-area line-h3">
+					<div contenteditable="true" placeholder="Please breifly describe your problems and suggestions."></div>
+				</div>
+			</div>
+			<div class="question-item f-bgfff f-mt20">
+				<p class="question-title hyphenate">2.Please fill in the electronic  payment you frequently used.</p>
+				<ul class="payment-methods-list">
+					<li>
+						<input type="checkbox" name="checkbox" id="checkbox01">
+						<label for="checkbox01">
+							<i class="icon-01"></i>
+						</label>
+						<p>Skrill</p>
+					</li>
+					<li>
+						<input type="checkbox" name="checkbox" id="checkbox02" checked>
+						<label for="checkbox02">
+							<i class="icon-02"></i>
+						</label>
+						<p>Help2Pay</p>
+					</li>
+					<li>
+						<input type="checkbox" name="checkbox" id="checkbox03">
+						<label for="checkbox03">
+							<i class="icon-03"></i>
+						</label>
+						<p>Telegraphic Transfer</p>
+					</li>
+					<li>
+						<input type="checkbox" name="checkbox" id="checkbox04">
+						<label for="checkbox04">
+							<i class="icon-04"></i>
+						</label>
+						<p>Fasapay</p>
+					</li>
+					<li>
+						<input type="checkbox" name="checkbox" id="checkbox05">
+						<label for="checkbox05">
+							<i class="icon-05"></i>
+						</label>
+						<p>Credit Card</p>
+					</li>
+					<li>
+						<input type="checkbox" name="checkbox" id="checkbox06" checked>
+						<label for="checkbox06">
+							<i class="icon-06"></i>
+						</label>
+						<p>Other</p>
+					</li>
+				</ul>
+				<div class="question-area question-area-payment">
+					<div contenteditable="true" placeholder="Please enter the payment method."></div>
+				</div>
+			</div>
+			<div class="btn-group">
+				<div class="btn-radius step-bar">
+					<a href="javascript:;" class="btn">Submit</a>
+				</div>
+			</div>
+			<div class="contact-us">
+				<div class="head-tit"><i class="v-line"></i>Contact Us</div>
+				<ul>
+					<li><span class="txt-num"><i class="i-star-badge"></i></span>
+						<p>Please Click ( Icon <i class="i-service"></i> ) to contact our CS representative <small>(Service hours GMT+0 01:00- 10:00)</small></p>
+					
+					</li>
+					<li>
+						<span class="txt-num"><i class="i-star-badge"></i></span>
+						<p>WhatsApp：<span>+852 9611 7934</span></p>
+						<span class="txt-num txt-none"></span>
+						<p>Line：<span>gwfxcs01</span></p>
+					</li>
+					<li><span class="txt-num"><i class="i-star-badge"></i></span><p>Email address: cs@gwfxglobal.com</p></li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+	
+	<script type="text/javascript">
+		$(function () {
+			$('#checkbox06').prop('checked') && $('.question-area.question-area-payment').show();
+			$('#checkbox06').click(function () {
+				$(this).prop('checked') && $('.question-area.question-area-payment').show();
+				!$(this).prop('checked') && $('.question-area.question-area-payment').hide();
+			});
+		})
+	
+	
+	</script>
+</html>

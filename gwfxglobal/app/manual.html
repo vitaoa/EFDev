@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Manual</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="telephone=no" name="format-detection">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport" />
+		<meta name="author" content="[2018.3] Designed by Bruce;Coded by Janice">
+		<link rel="stylesheet" media="screen" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<script src="js/rem.js" charset="utf-8"></script>
+		<script type="text/javascript">
+		    remCompute(750, true);
+		</script>
+		<div class="wrapper f-h100vh">
+			<div class="m-slidemenu f-bgfff f-mt20">
+				<a class="menu-top show" href="javascript:void(0)">Deposit and Withdrawal Guideline </a>
+				<div class="menu-items">
+					<ul>
+						<li>
+							<a href="guideline-skrill.html">Deposit Guideline - Skrill
+								<span class="menu-items-desc">Banks transfers and credit card transfers, such as VISA, AE, JCB, Diners Club, etc</span>
+							</a>
+						</li>
+						<li>
+							<a href="guideline-help2pay.html">Deposit Guideline - Help2pay
+								<span class="menu-items-desc">Internet banking payment for the local banks in Malaysia, Vietnam, Thailand, Indonesia</span>
+							</a>
+						</li>
+						<li>
+							<a href="guideline-Fasapay.html">Deposit Guideline - Fasapay
+								<span class="menu-items-desc">A E-wallet for payments in either USD or IRD by Indonesian bank accounts</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="m-slidemenu f-bgfff f-mt20">
+				<a class="menu-top" href="javascript:void(0)">Trade</a>
+				<div class="menu-items dn">
+					<ul>
+						<li><a href="manual-trade-1.html">Buy</a></li>
+						<li><a href="manual-trade-2.html">Sell</a></li>
+						<li><a href="manual-trade-3.html">Close Positions</a></li>
+						<li><a href="manual-trade-4.html">Pending Orders</a></li>
+						<li><a href="manual-trade-5.html">Stop Loss</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="m-slidemenu f-bgfff f-mt20">
+				<a class="menu-top" href="javascript:void(0)">Charts</a>
+				<div class="menu-items dn">
+					<ul>
+						<li><a href="manual-charts-1.html">Candlesticks</a></li>
+						<li><a href="manual-charts-2.html">Properties</a></li>
+						<li><a href="manual-charts-3.html">Add Options</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="m-slidemenu f-bgfff f-mt20">
+				<a class="menu-top" href="javascript:void(0)">Deposit and Withdrawal</a>
+				<div class="menu-items dn">
+					<ul>
+						<li><a href="manual-deposit.html">Deposit</a></li>
+						<li><a href="manual-withdrawal.html">Withdraw</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="m-slidemenu f-bgfff f-mt20">
+				<a class="menu-top" href="javascript:void(0)">Check Equity and Positions</a>
+				<div class="menu-items dn">
+					<ul>
+						<li><a href="manual-check-1.html">Check Positions</a></li>
+						<li><a href="manual-check-2.html">Check Equity</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+
+	</body>
+	<script type="text/javascript">		
+        $(function () {
+        	$('.m-slidemenu .menu-top').click(function () {
+        		$(this).toggleClass('show');
+        		if($(this).hasClass('show')){
+        			$(this).parent().find('.menu-items').slideDown();
+        		}else{
+        			$(this).parent().find('.menu-items').slideUp();
+        		}
+        	})
+        })
+   
+        
+	</script>
+
+</html>

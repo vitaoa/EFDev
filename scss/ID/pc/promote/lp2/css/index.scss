@@ -1,0 +1,186 @@
+
+$support_for_ie: true;
+@import "../../../../../mixins/library";
+@import "../../../../../mixins/keyframes/keyframes";
+
+// variables
+$c-yellow:#ffdb4b;
+$c-blue:#005faf;
+
+
+/* ============ Common ============ */
+.wrapper{position: relative;overflow: hidden;background: #f9fcfd;}
+
+.w-part{width:1190px;margin: 0 auto;}
+.c-yellow{color:$c-yellow;}
+.c-blue{ color:$c-blue; }
+.upper-txt{text-transform: uppercase;}
+.clearfix{@include clearfix;}
+
+.btn-group{padding-bottom:80px;padding-top: 13px;
+    .btn{@include inline-block;text-align: center;border-radius:6px;
+      @include prefixer(transition, all .3s ease-in-out, ("webkit", "moz","ms","o"));
+      font-size: 24px;@include size(310px,60px);line-height: 60px;
+        &:hover{padding-left: 10px;padding-right: 10px;}
+    }
+    .btn-yellow{background: #ffa04b;color:#fff;}
+    //& + .a-link{margin-top: 20px;@include inline-block;}
+}
+//.a-link{text-decoration: underline;font-size: 14px;}
+.titlebar{font-size: 30px;color: #333;line-height: 40px;@include clearfix;padding-top:80px;position: relative;
+  p{position: relative;z-index: 1;
+    span{display: block;}
+  }
+  b.upper-txt{display: block;
+ /*   span{display: inline;}*/
+  }
+  .sub-title{font-size: 16px;color:#555;line-height: 30px;padding-top: 9px;}
+  .v-line{display: block;margin-top: 16px;margin-bottom: 10px;}
+  .i-tit-symbol{@include inline-block;position: absolute;left:-39px;top:53px;}
+}
+.block-side{
+  &.fl{padding: 47px 35px 32px 116px;
+    & + .block-main{padding-left: 0;}
+  }
+  &.fr{padding: 103px 46px 0 13px;}
+
+}
+.block-main{width:655px;padding-left: 60px;}
+
+[class*="list-col-"]{@include clearfix;
+    li{float: left;}
+    &.list-col-3{padding-top: 52px;padding-bottom: 45px;
+        li{width: 32%;
+            .list-item{float: right;height: 370px;
+              .item-top{@include size(370px,125px);padding-top: 64px;}
+            }
+            &:first-child{
+              .list-item{float: left;}
+                & + li{margin-left:2%;margin-right: 2%;
+                  .list-item{float: none;}
+                }
+            }
+        }
+    }
+  &.list-col-4{padding: 0 75px;
+    li{width:25%;margin-top: 40px;
+      .list-item{height: 210px;background:#fff;border-radius: 6px;
+        .item-top{@include size(220px,95px);padding-top: 35px;}
+      }
+      .item-txt{
+        .txt-tit{color:#005faf;}
+      }
+    }
+  }
+}
+/* banner */
+.banner{position: relative;
+  .banner_01,.banner_02,.banner_03{background-position: center top;background-repeat: no-repeat;height:267px;}
+  .banner_01{background-image:url(../images/banner_01.jpg);}
+  .banner_02{background-image:url(../images/banner_02.jpg);}
+  .banner_03{background-image:url(../images/banner_03.jpg);}
+  .w-part{color:#fff;position: absolute;top:0;left:0;right:0;height: 100%;width:1130px;}
+  .logo{position: relative;top:21px;}
+
+  .banner-txt{padding-top: 152px;line-height: 1.2;color:#fff;}
+  .p1{font-size: 18px;text-shadow: 0 3px 8px rgba(0, 18, 57, .54);margin-bottom: 10px;}
+  .p2{font-size: 50px;font-weight: 700;text-shadow: 0 7px 21px #001239;margin-bottom: 43px;
+    span{display: block;}
+    em{font-style: normal;}
+  }
+  .p3{font-size: 24px;color:$c-yellow;font-style: italic;@include inline-block;border-bottom: 1px solid $c-yellow;line-height: 38px;
+    b{font-size: 40px;position: relative;top:-5px;@include inline-block;}
+    span{border-top: 1px solid $c-yellow;@include inline-block;}
+  }
+  .btn-group{padding-top: 20px;
+    .btn-yellow{background:$c-yellow;color: #69570e;}
+  }
+}
+/* part */
+.box-shadow{@include prefixer(box-shadow, 0 0 18px rgba(0, 0, 0, .05), ("webkit","moz"));background:#fff;border-radius: 6px;}
+
+.part1{
+  .box-shadow{position:relative;z-index:1;margin-top:-110px;}
+}
+
+.part2{
+  .w-part{padding-bottom: 98px;}
+}
+.part3-bg{background:url(../images/part3-bg.jpg) no-repeat center top;height: 450px;
+  .w-part{padding-top: 20px;}
+  .block-side.fl{padding-left: 81px;padding-top: 57px;padding-right: 50px;}
+}
+.part5-bg{background:url(../images/part5-bg.jpg) no-repeat center top;height: 550px;
+  .titlebar{color:#fff;
+    .sub-title{color:#fff;padding-top: 20px;}
+  }
+}
+
+
+.list-item{@include inline-block;
+  .item-top{
+    [class*="icon"]{@include inline-block;vertical-align: middle;}
+  }
+}
+.item-txt{padding: 0 0 28px;
+  p{font-size: 16px;line-height: 30px;color:#555;
+    span{display: block;}
+  }
+  .txt-tit{font-size: 20px;line-height:26px;padding-bottom: 15px;color:#333;
+    span{margin-bottom: -7px;}
+  }
+  .txt-line1{padding-top: 12px;}
+}
+
+.pop-rule-btn{ margin-top:10px;@include inline-block;font-size:16px;float:left; }
+
+
+///* ============ Rule ============ */
+@import "../../../rule";
+
+
+/* animation */
+@include generateAnimation(AnimUp,("webkit","moz","ms","o")){
+  0% {#{prefixerAttr(transform, $current-prefix)}: translate3d(0, 50%, 0);}
+  100% {#{prefixerAttr(transform, $current-prefix)}: none;}
+}
+@include generateAnimation(fadeInDown,("webkit","moz","ms","o")){
+  0% {opacity: 0;#{prefixerAttr(transform, $current-prefix)}: translate3d(0, -50%, 0);}
+  100% {opacity: 1;#{prefixerAttr(transform, $current-prefix)}: none;}
+}
+@include generateAnimation(fadeInUp,("webkit","moz","ms","o")){
+  0% {opacity: 0;#{prefixerAttr(transform, $current-prefix)}: translate3d(0, 50%, 0);}
+  100% {opacity: 1;#{prefixerAttr(transform, $current-prefix)}: none;}
+}
+@include generateAnimation(fadeInRight,("webkit","moz","ms","o")){
+  0% {opacity: 0;#{prefixerAttr(transform, $current-prefix)}: translate3d(50%, 0, 0);}
+  100% {opacity: 1;#{prefixerAttr(transform, $current-prefix)}: none;}
+}
+@include generateAnimation(fadeInLeft,("webkit","moz","ms","o")){
+  0% {opacity: 0;#{prefixerAttr(transform, $current-prefix)}: translate3d(-50%, 0, 0);}
+  100% {opacity: 1;#{prefixerAttr(transform, $current-prefix)}: none;}
+}
+
+.animated {
+  @include prefixer(animation-duration, 1s, ("webkit", "moz","ms","o"));
+  @include prefixer(animation-fill-mode, both, ("webkit", "moz","ms","o"));
+}
+
+
+//******* sprites
+//----------------------------
+@import "sp-p-icons.scss";
+@media(max-width:979px) {
+  .pc{display: none;}
+  .mo{display: block;}
+  .wrapper{/*max-width: 750px;margin: 0 auto;*/overflow: hidden;}
+  @import "mw979.scss";
+  @import "sp-m-icons.scss";
+}
+@media(max-width:750px){
+  @import "../mw979.scss";
+}
+
+//
+/* ============ Responsive ============ */
+@import "../lp-queries.scss";

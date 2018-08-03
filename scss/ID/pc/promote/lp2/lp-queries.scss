@@ -1,0 +1,45 @@
+
+///*:::PRIMARY:::*//* Portrait tablet to landscape and desktop 
+//------------------------------------------------------*/
+@media(min-width:980px) and (max-width:1279px){
+    .w-part{width:950px;}
+
+    .titlebar{font-size: 24px;line-height:32px;padding-top: 60px;
+        .sub-title{font-size: 12px;line-height: 20px;}
+    }
+    .block-side{
+        &.fl{padding: 20px 15px 20px 20px;
+            & + .block-main{padding-left: 0;}
+        }
+        &.fr{padding: 40px 20px 0 13px;}
+
+    }
+    .block-main{width:500px;padding-left: 20px;}
+    [class*="list-col-"].list-col-4{padding: 0;}
+    [class*="list-col-"].list-col-3 li .list-item .item-top{width: 300px;}
+    .banner{
+
+        .w-part{width:950px;}
+
+        .banner-txt{padding-top: 152px;line-height: 1.2;color:#fff;}
+        .p1{font-size: 18px;text-shadow: 0 3px 8px rgba(0, 18, 57, .54);margin-bottom: 10px;}
+        .p2{font-size: 50px;font-weight: 700;text-shadow: 0 7px 21px #001239;margin-bottom: 43px;
+            span{display: block;}
+        }
+        .p3{font-size: 24px;color:$c-yellow;font-style: italic;@include inline-block;border-bottom: 1px solid $c-yellow;line-height: 38px;
+            b{font-size: 40px;position: relative;top:-10px;@include inline-block;}
+            span{border-top: 1px solid $c-yellow;@include inline-block;}
+        }
+        .btn-group{padding-top: 20px;
+            .btn-yellow{background:$c-yellow;color: #69570e;}
+        }
+    }
+    .part3-bg .block-side.fl{padding: 20px 40px 20px 20px;}
+    .item-txt{
+        p{font-size: 14px;
+        }
+        .txt-tit{font-size: 18px;
+        }
+    }
+}
+

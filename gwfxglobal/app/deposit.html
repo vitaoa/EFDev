@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Deposit</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="telephone=no" name="format-detection">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport" />
+		<meta name="author" content="[2018.4] Designed by Jadia;Coded by Vita">
+		<link rel="stylesheet" media="screen" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	</head>
+
+	<body class="bg-f1f6fa">
+		<script src="js/rem.js" charset="utf-8"></script>
+		<script type="text/javascript">
+		    remCompute(750, true);
+		</script>
+		<div class="wrapper">
+			<div class="m-chartstudy f-bgfff f-mt20 c-476174">
+				<h5>Select Deposit Methods</h5>
+				<ul class="list-group">
+					<li>
+						<a href="javascript:void(0)">
+							<input type="radio" id="radio01" name="radio-group" checked>
+							<label for="radio01">
+								<b class="list-cell-title">Skrill</b>
+								<span class="list-cell-desc">Banks transfers and credit card transfers, such as VISA, AE, JCB, Diners Club, etc</span>
+							</label>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<input type="radio" id="radio02" name="radio-group">
+							<label for="radio02">
+								<b class="list-cell-title">Help2pay</b>
+								<span class="list-cell-desc">Internet banking payment for the local banks in Malaysia, Vietnam, Thailand, Indonesia</span>
+							</label>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<input type="radio" id="radio03" name="radio-group">
+							<label for="radio03">
+								<b class="list-cell-title">Telegraphic Transfer</b>
+								<span class="list-cell-desc">Via Wire transfer by visiting your local branch or online. The normal processing time for wire transfer is 3-5 days</span>
+							</label>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="f-h20"></div>
+			<div class="step-bar fixed-btn">
+				<a href="javascript:;" class="nextStepBtn"><b>Next Step</b></a>
+			</div>
+		</div>
+
+
+		<!--redirect start-->
+		<div class="PopupLayer redirect-popup dn">
+			<div class="popup-tb">
+				<div class="popup-tb-cell">
+					<div class="PopupBox">
+						<div class="PopupCon">
+							<div class="service-icon">
+								<i class="i-service2"></i>
+								<i class="i-service-shadow"></i>
+							</div>
+							<p class="p-txt1">You are being redirected to online CS to get the information for telegraphic transfer</p>
+							<p class="p-txt2">
+								Online CS’s service time:
+								<b>GMT+0 Mon-Fri 01:00-10:00</b>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--redirect end-->
+
+	</body>
+	<script type="text/javascript">		
+        $('.nextStepBtn').click(function () {
+			$('.redirect-popup').show();
+        });
+	</script>
+
+</html>

@@ -22,10 +22,10 @@ lp_public.css
 
 ## gulpfile
 
-   **runs**£º
+   **runs**ï¼š
    
-   1. html£º`html-lp` 
-   1. images£º`sprites:more`
-   1. css£º`px2rem:lp` ¡¢`css-format`
+   1. htmlï¼š`html-lp` 
+   1. imagesï¼š`sprites:more`
+   1. cssï¼š`px2rem:lp` ã€`css-format`
 
 ---

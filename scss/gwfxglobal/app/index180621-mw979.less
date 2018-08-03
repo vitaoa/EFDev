@@ -1,0 +1,55 @@
+
+.link-bar{
+  &.theme-pink{.box-shadow(0 0  0.20rem rgba(169,169,169,.15));}
+  [class*="link-icon-"]{
+    &.i-arrow-r{margin-top: -0.14rem;right: 0.32rem;}
+    &.icon-badge{top: 0.22rem;left: 0.32rem;}
+  }
+  .link-con-c{padding: 0.18rem 0.85rem;}
+  .txt-1{font-size: 0.28rem;}
+  .txt-2{font-size: 0.24rem;}
+}
+.icon-badge{border-radius: 0.05rem;
+}
+.i-arrow-r{.size( 0.18rem, 0.28rem);background-size: 0.18rem auto;}
+
+//Questionnaire
+.question-item{.box-shadow(1px 1px 0.24rem rgba(181,186,190,.4));
+  .question-title{font-size: 0.30rem;padding: 0.20rem 0.30rem;
+  }
+  .question-area{line-height: 0.60rem;height: 0.60rem;padding: 0.12rem 0.30rem;font-size: 0.30rem;
+    &.line-h3{height: 1.80rem;}
+    textarea,[contenteditable="true"]{font-size: 0.30rem;}
+  }
+}
+.payment-methods-list{
+  li{font-size: 0.24rem;padding: 0.32rem 0  0.26rem;
+    i{margin: 0 auto 0.12rem;}
+    input[type="checkbox"]{
+      & + label{
+        &:before{bottom: 0.05rem;right: -0.16rem;}
+      }
+      &:checked{
+        & + label{
+          &:before{.size( 0.32rem, 0.32rem);background-size: 0.32rem auto;}
+        }
+      }
+    }
+  }
+}
+.btn-group{padding: 0  0.30rem;
+  .btn-radius{border-radius: 0.05rem;margin: 0.82rem 0  0.62rem;}
+}
+.contact-us{padding-bottom: 0.40rem;
+  .head-tit{font-size: 0.30rem;line-height: 0.21rem;padding-bottom: 0.24rem;padding-left: 0.30rem;padding-right: 0.30rem;margin-bottom: 0.16rem;
+    .v-line{.size( 0.06rem, 0.21rem);margin-right: 0.06rem;}
+  }
+  li{font-size: 0.30rem;padding-left: 0.30rem;padding-right: 0.30rem;padding-bottom: 0.12rem;
+    //.txt-none{margin-right: 0.84rem;}
+    .txt-num{
+      & + p{margin-left: 0.42rem;}
+    }
+  }
+  .i-service{.size( 0.42rem, 0.42rem);background-size: 0.42rem auto;}
+  .i-star-badge{.size( 0.26rem, 0.30rem);background-size:auto 0.30rem;}
+}

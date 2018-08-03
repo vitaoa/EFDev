@@ -1,0 +1,59 @@
+@charset "utf-8"; //字符设置
+@import '../../../../less/less.less';
+@import "../../../../less/prefixes.less";
+@import "../../../../less/reset-mo.less";
+
+
+/* ============ Common ============ */
+.mw750{max-width: 750px;margin: 0 auto;}
+.guideline-pagebg{/*height:100vh;*/width:100%;display: block;}
+[class*="skrill-pop-"]{position:relative;}
+.skrill-pop-01{background:url(../images/guideline/skrill-pop-01.png) no-repeat left center;}
+.skrill-pop-02{background:url(../images/guideline/skrill-pop-02.png) no-repeat left center;}
+.skrill-pop-03{background:url(../images/guideline/skrill-pop-03.png) no-repeat left center;}
+.skrill-pop-04{background:url(../images/guideline/skrill-pop-04.png) no-repeat left center;}
+.skrill-pop-04-2{background:url(../images/guideline/skrill-pop-04-2.png) no-repeat left center;}
+.skrill-pop-05{background:url(../images/guideline/skrill-pop-05.png) no-repeat left center;}
+.skrill-pop-06{background:url(../images/guideline/skrill-pop-06.png) no-repeat left center;}
+.skrill-pop-07{background:url(../images/guideline/skrill-pop-07.png) no-repeat left center;}
+
+.skrill-01{.PopupBox{top:60%;}}
+.skrill-02{.PopupBox{top:38%;}}
+.skrill-03{.PopupBox{top:37%;}}
+.skrill-04{.PopupBox{top:38%;}}
+.skrill-04-2{.PopupBox{top:11%;}}
+.skrill-05{.PopupBox{top:57%;}}
+.skrill-06{.PopupBox{top:12%;}}
+.skrill-07{.PopupBox{top:27%;}}
+
+
+.btn-group{position: absolute;
+  .btn{.inline-block();text-align: center;position: relative;}
+  .btn-default{color: #5571f4;background:#fff;padding: 1px;}
+  .btn-primary{color:#e2eaf2;border:1px solid #e2eaf2;}
+}
+
+.guideline-step{position: relative;}
+.PopupLayer{position:absolute;left:0;top:0;width:100%;height:100%;z-index:9999;
+  .PopupBox{position: relative;max-width: 750px;margin: 0 auto;
+    //.animation(dropDown .3s cubic-bezier(0.22, 0.61, 0.36, 1));
+    .PopupCon{}
+  }
+}
+
+@import "guideline-mw979.less";
+//******* animation
+//----------------------------
+//@import "../../../../../../less/keyframes/fadeInDown.less";
+.animated {.animation-duration(1s);.animation-fill-mode(both);}
+/* ============ Responsive ============ */
+@media(max-width:750px) {
+  @import "../guideline-mw979.less";
+  //@import "sp-m.less";
+  //@import "sp-m-icons.less";
+  //@import "sp-m-others.less";
+}
+
+//******* sprites
+//----------------------------
+//@import "sp-index.less";
